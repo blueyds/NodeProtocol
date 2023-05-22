@@ -1,7 +1,7 @@
 
 import Foundation
 
-public struct DFSPreOrderTreeIterator<Value:TreeNodeClass>: IteratorProtocol{
+public struct DFSPreOrderTreeIterator<Value:NodeProtocol>: IteratorProtocol{
     //var root: any TreeNodeClass
     public init(_ root:  Value){
         stack = [root]
